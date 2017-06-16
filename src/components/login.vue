@@ -4,11 +4,11 @@
     <el-form :model="loginForm" :rules="rules" ref="loginForm" label-width="100px" class="demo-ruleForm">
       <el-form-item prop="username">
         <!--用户名-->
-        <el-input type="text" placeholder="用户名" v-model="loginForm.username"></el-input>
+        <el-input type="text" placeholder="用户名" v-model="loginForm.username" autoComplete="off"></el-input>
       </el-form-item>
       <el-form-item prop="psw">
         <!--密码-->
-        <el-input type="password" placeholder="密码" v-model="loginForm.psw"></el-input>
+        <el-input type="password" placeholder="密码" v-model="loginForm.psw" autoComplete="off"></el-input>
       </el-form-item>
       <el-form-item prop="checked">
         <!--是否记住密码-->
