@@ -20,3 +20,17 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+// 全局组件(支出的备注)
+Vue.component('my-item-zh', {
+  functional: true,
+  render: function (h, ctx) {  // 渲染组件
+    var item = ctx.props.item
+    return h('li', ctx.data, [
+      h('div', {attrs: {class: 'name'}}, [item.value]),
+      h('span', {attrs: {class: 'addr'}}, [item.address])
+    ])
+  },
+  props: {
+    item: {type: Object, required: true}
+  }
+})

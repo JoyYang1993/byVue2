@@ -4,6 +4,7 @@ import Hello from '@/components/Hello'
 import Yj from '@/components/Yj'
 import login from '@/components/login'
 import register from '@/components/register'
+import record from '@/components/record'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: register
+    },
+    {
+      path: '/record',
+      name: 'record',
+      component: record
     }
   ]
 })
